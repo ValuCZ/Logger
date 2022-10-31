@@ -1,0 +1,14 @@
+include README.md
+include Dockerfile
+include apikey_permissions.txt
+include entrypoint.sh
+recursive-include arcsight_logger/util *
+include arcsight_logger/LICENSE
+include doc/*.md
+include doc/screenshots/*
+include icons/*.png
+recursive-include payload_samples/*/ *.json
+include tox.ini
+recursive-include tests/ *
+
+global-exclude *.bak
